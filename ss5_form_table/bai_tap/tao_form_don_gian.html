@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        label {
+            color: blue;
+            margin-left: 5px;
+        }
+        table {
+            margin-left: 600px;
+        }
+        .many {
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <table style="width: 400px;padding: 1px 10px 10px 10px; background-color: white">
+        <tr style="background-color: red">
+            <td style="color: white;text-align: center" colspan="3" >
+                SỞ THÍCH CỦA BẠN
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="yourname">Họ và tên</label>
+            </td>
+            <td>
+                <input type="text" id="yourname" name="yourname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" id="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <label>Sở thích</label>
+            </td>
+            <td class="many">
+                <input type="checkbox" name="hobby" value="Thể thao">Thể thao
+                <input type="checkbox" name="hobby" value="Âm nhạc">Âm nhạc
+                <input type="checkbox" name="hobby" value="Đọc sách">Đọc sách <br>
+                <input type="checkbox" name="hobby" value="Lướt web">Lướt web
+                <input type="checkbox" name="hobby" value="Chơi game">Chơi game
+                <input type="checkbox" name="hobby" value="Điện ảnh">Điện ảnh <br>
+                <input type="checkbox" name="hobby" value="Du lịch">Du lich <br>
+                <input type="submit" name="submit" value="Gửi thông tin">
+                <input type="reset" name="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form>
+<br><br><br>
+
+<hr style="text-align: center">
+<br><br><br>
+
+<form>
+    <table style="width: 400px;padding: 1px 10px 10px 10px; background-color: yellow">
+        <tr style="background-color: lightskyblue" >
+            <td colspan="3">ĐĂNG KÝ HỌC VIÊN</td>
+        </tr>
+        <tr>
+            <td>
+                <label for="yourname">Họ và tên</label>
+            </td>
+            <td>
+                <input type="text" id="yourname" name="yourname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="date">Ngày sinh</label>
+            </td>
+            <td>
+                <input type="Date" id="date" name="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Giới tính</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" value="Nam" checked>Nam
+                <input type="radio" name="gender" value="Nữ">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <label>Địa chỉ</label>
+            </td>
+            <td>
+                <textarea type="despricion"  rows="3" cols="25"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="class">Lớp</label>
+            </td>
+            <td>
+                <select name="class" id="class">
+                <option value="--Chọn lớp--" name="class">--Chọn lớp--</option>
+                <option value="1" name="class">A0</option>
+                <option value="2" name="class">A1</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email" >Email</label>
+            </td>
+            <td>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Điện thoại</label>
+            </td>
+            <td>
+                <input type="number" name="number">
+                <br>
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
