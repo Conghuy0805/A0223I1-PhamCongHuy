@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button{
+        width: 110px;
+    }
+    input {
+        width: 200px;
+    }
+</style>
+<body>
+<h1>Caculator</h1>
+<div>
+<input type="number" id="number1">
+<input type="number" id="number2">
+</div>
+<br>
+<button type="button" value="Addition(+)" onclick="something()">Addition(+)</button>
+<button type="button" value="Subtraction(-)" onclick="something1()">Subtraction(-)</button>
+<button type="button" value="Multiplication(X)" onclick="something2()">Multiplication(X)</button>
+<button type="button" value="Division(/)" onclick="something3()">Division(/)</button>
+<p id="ketqua"></p>
+
+</body>
+<script>
+    function something() {
+        var x = document.getElementById("number1").value;
+        var y= document.getElementById("number2").value;
+        var total = parseFloat(x) + parseFloat(y);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+
+    function something1() {
+        var x = document.getElementById("number1").value;
+        var y = document.getElementById("number2").value;
+        var total = (x - y);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+
+    function something2() {
+        var x = document.getElementById("number1").value;
+        var y = document.getElementById("number2").value;
+        var total = (x * y);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+
+    function something3() {
+        var x = document.getElementById("number1").value;
+        var y = document.getElementById("number2").value;
+        var total = (x / y);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+</script>
+</html>
