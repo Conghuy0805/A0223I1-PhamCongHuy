@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TẠO FORM ĐƠN GIẢN</title>
     <style>
         body {
             background-color: lightskyblue;
@@ -11,18 +11,21 @@
             color: blue;
             margin-left: 5px;
         }
-        table {
-            margin-left: 600px;
+        .tablea {
+            margin: 0px auto;
         }
         .many {
             color: orange;
+        }
+        button{
+            margin-top: 10px;
         }
 
     </style>
 </head>
 <body>
 <form>
-    <table style="width: 400px;padding: 1px 10px 10px 10px; background-color: white">
+    <table style="width: 400px;padding: 1px 10px 10px 10px; background-color: white" class="tablea">
         <tr style="background-color: red">
             <td style="color: white;text-align: center" colspan="3" >
                 SỞ THÍCH CỦA BẠN
@@ -30,10 +33,10 @@
         </tr>
         <tr>
             <td>
-                <label for="yourname">Họ và tên</label>
+                <label for="name">Họ và tên</label>
             </td>
             <td>
-                <input type="text" id="yourname" name="yourname">
+                <input type="text" id="name" name="yourname">
             </td>
         </tr>
         <tr>
@@ -49,14 +52,41 @@
                 <label>Sở thích</label>
             </td>
             <td class="many">
-                <input type="checkbox" name="hobby" value="Thể thao">Thể thao
-                <input type="checkbox" name="hobby" value="Âm nhạc">Âm nhạc
-                <input type="checkbox" name="hobby" value="Đọc sách">Đọc sách <br>
-                <input type="checkbox" name="hobby" value="Lướt web">Lướt web
-                <input type="checkbox" name="hobby" value="Chơi game">Chơi game
-                <input type="checkbox" name="hobby" value="Điện ảnh">Điện ảnh <br>
-                <input type="checkbox" name="hobby" value="Du lịch">Du lich <br>
-                <input type="submit" name="submit" value="Gửi thông tin">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="hobby" value="Thể thao">Thể thao
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby" value="Âm nhạc">Âm nhạc
+
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby" value="Đọc sách">Đọc sách <br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="hobby" value="Lướt web">Lướt web
+
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby" value="Chơi game">Chơi game
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby" value="Điện ảnh">Điện ảnh <br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="hobby" value="Du lịch">Du lich <br>
+
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Gửi thông tin ">
                 <input type="reset" name="reset" value="Nhập lại">
             </td>
         </tr>
@@ -68,7 +98,7 @@
 <br><br><br>
 
 <form>
-    <table style="width: 400px;padding: 1px 10px 10px 10px; background-color: yellow">
+    <table style="width: 400px;padding: 1px 10px 10px 10px; background-color: yellow" class="tablea">
         <tr style="background-color: lightskyblue" >
             <td colspan="3">ĐĂNG KÝ HỌC VIÊN</td>
         </tr>
@@ -126,13 +156,13 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td valign="top">
                 <label>Điện thoại</label>
             </td>
             <td>
                 <input type="number" name="number">
                 <br>
-                <button type="submit">Đăng ký</button>
+                <button type="submit" style="margin-top: 10px">Đăng ký</button>
                 <button type="reset">Nhập lại</button>
             </td>
         </tr>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Nhập số a: <input type="number" id="a"> <br><br>
+    Nhập số b: <input type="number" id="b"> <br>
+    <h3 id="result"></h3><br>
+    <button type="button" onclick="giaiBt()">Result</button>
+</form>
+</body>
+<script>
+    function giaiBt(){
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        if(a == 0 && b == 0){
+            alert("Phương trình có vô số nghiệm ");
+        }else if(a != 0 && b == 0){
+            alert("Phương trình có nghiệm x = 0");
+        }else if(a == 0 && b != 0){
+            alert("Phương trình vô nghiệm");
+        }else{
+                alert("Phương trình có nghiệm x = " + (-b/a));
+        }
+    }
+</script>
+</html>

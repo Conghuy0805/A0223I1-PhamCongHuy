@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button{
+        font-size: large;
+    }
+    label{
+        font-size: large;
+    }
+</style>
+<body>
+<div>
+  <label for="num">Nhập cạnh a</label>
+  <input type="number" id="num">
+</div>
+<br>
+<div>
+    <label for="num1">Nhập cạnh b</label>
+    <input type="number" id="num1">
+</div>
+<br>
+<button type="submit" onclick="check3()">Resutl</button>
+</body>
+<script>
+    function check3(){
+        let a = document.getElementById("num").value;
+        let b = document.getElementById("num1").value;
+        let dt = a*b;
+        alert("Diện tích hình chữ nhật là: " + dt);
+    }
+</script>
+</html>

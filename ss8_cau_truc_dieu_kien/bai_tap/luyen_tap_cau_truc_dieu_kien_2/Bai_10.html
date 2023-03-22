@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+</head>
+<body>
+<script>
+
+    let soDien = +prompt('Nhập vào số điện của bạn (kWh)');
+    let tienDien;
+    let a = 1678;
+    let b = 1734;
+    let c = 2014;
+    let d = 2536;
+    let e = 2834;
+    let f = 2927;
+    if(soDien<=50){
+        tienDien=soDien*a;
+        alert("Bạn đã dùng  điện trong khoảng 0 - 50 kWh số tiền bạn phải trả là : " + tienDien);
+    }else if(soDien<=100){
+        tienDien=50*a+((soDien-50)*b);
+        alert("Bạn đã dùng  điện trong khoảng 51 - 100 kWh số tiền bạn phải trả là : " + tienDien);
+    }else if(soDien<=200){
+        tienDien=50*a+(50*b)+((soDien-100)*c);
+        alert("Bạn đã dùng  điện trong khoảng 101 - 200 kWh số tiền bạn phải trả là : " + tienDien);
+    }else if(soDien<=300){
+        tienDien=50*a+(50*b)+(100*c)+((soDien-200)*d);
+        alert("Bạn đã dùng  điện trong khoảng 201 - 300 kWh số tiền bạn phải trả là : " + tienDien);
+    }else if(soDien<=400){
+        tienDien=50*a+(50*b)+(100*c)+(100*d)+((soDien-300)*e);
+        alert("Bạn đã dùng  điện trong khoảng 301 - 400 kWh số tiền bạn phải trả là : " + tienDien);
+    }else if(soDien>400){
+        tienDien=50*a+(50*b)+(100*c)+(100*d)+(100*e)+((soDien-400)*f);
+        alert("Bạn đã dùng  điện trên 400 kWh số tiền bạn phải trả là : " + tienDien);
+    }
+</script>
+</body>
+</html>

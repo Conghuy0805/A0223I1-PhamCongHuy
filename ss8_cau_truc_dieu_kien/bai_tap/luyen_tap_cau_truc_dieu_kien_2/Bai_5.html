@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <label for="canh">Nhập cạnh a</label>
+    <input type="number" id="canh">
+</div>
+<br>
+<div>
+    <label for="canh1">Nhập cạnh b</label>
+    <input type="number" id="canh1">
+</div>
+<br>
+<button type="submit" onclick="check4()">Resutl</button>
+</body>
+<script>
+    function check4(){
+        var a = document.getElementById("canh").value;
+        var b = document.getElementById("canh1").value;
+        var dt = (a*b)/2 ;
+        alert("Diện tích tam giác vuông là: " + dt);
+    }
+</script>
+</html>
