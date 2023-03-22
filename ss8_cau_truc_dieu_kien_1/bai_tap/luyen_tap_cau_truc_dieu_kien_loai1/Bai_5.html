@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    label{
+        font-size: large;
+    }
+    button{
+        font-size: large;
+    }
+</style>
+<body>
+<div>
+    <label for="num">Nhập điểm miệng</label><br>
+    <input type="number" id="num">
+</div>
+<br>
+
+<div>
+    <label for="num1">Nhập điểm kiểm tra 15 phút</label><br>
+    <input type="number" id="num1">
+</div>
+<br>
+
+<div>
+    <label for="num2">Nhập điểm kiểm tra 1 tiết</label><br>
+    <input type="number" id="num2">
+</div>
+<br>
+
+<div>
+    <label for="num3">Nhập điểm kiểm tra cuối kì</label><br>
+    <input type="number" id="num3">
+</div>
+<br>
+
+<button type="submit" onclick="click3()">Send</button>
+</body>
+<script>
+    function click3(){
+        var a = +document.getElementById("num").value;
+        var b = +document.getElementById("num1").value;
+        var c = +document.getElementById("num2").value;
+        var d = +document.getElementById("num3").value;
+        var dtb = (a + b + c*2 + d*2)/6;
+        if(dtb >= 9){
+            alert("Giỏi")
+        }else if((dtb >= 7 ) && (dtb < 9)){
+            alert("Khá")
+        }else if((dtb >= 5 ) && (dtb < 7)){
+            alert("Trung bình")
+        }else{
+            alert("Yếu")
+        }
+    }
+</script>
+</html>

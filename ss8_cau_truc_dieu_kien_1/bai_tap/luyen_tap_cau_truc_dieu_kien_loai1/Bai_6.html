@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    label{
+        font-size: large;
+    }
+    button{
+        font-size: large;
+    }
+</style>
+<body>
+    <br>
+    <div>
+        <label for="num">Nhập tổng doanh số bán hàng</label>
+        <input type="number" id="num">
+    </div>
+    <br>
+    <button type="button" onclick="check1()">Send</button>
+</body>
+<script>
+    function check1(){
+        var doanhso = document.getElementById("num").value;
+        var hoahong;
+        if(doanhso <= 100){
+            hoahong = doanhso*5/100;
+            alert("Hoa hồng nhận được là: " + hoahong)
+        }else if(doanhso <= 300){
+            hoahong = doanhso*10/100;
+            alert("Hoa hồng nhận được là: " + hoahong )
+        }else if(doanhso > 300)
+            hoahong = doanhso*20/100;
+            alert("Hoa hồng nhận được là: " + hoahong)
+    }
+
+
+</script>
+
+</html>

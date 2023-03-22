@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <label for="num2"><strong>Nhập tuổi</strong></label><br>
+        <input type="number" id="num2">
+    </div>
+    <button type="submit" onclick="click1()">Send</button>
+    <script>
+        function click1() {
+            var c= document.getElementById("num2").value;
+            if (c < 16) {
+                alert("KHÔNG ĐỦ ĐIỀU KIỆN HỌC LỚP 10 ")
+            } else {
+                alert("ĐỦ ĐIỀU KIỆN HỌC LỚP 10")
+            }
+        }
+    </script>
+</body>
+</html>

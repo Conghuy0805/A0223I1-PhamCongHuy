@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1>BMT Calculator</h1>
+    <p class="a">Height (in cm) </p>
+    <input type="number" id="height">
+    <p class="a">Weight (in kg) </p>
+    <input type="number" id="weight">
+    <button id="bt" onclick="check()">Calculate</button>
+</div>
+<script>
+    var do_height = document.getElementById("height");
+    var do_weight = document.getElementById("weight");
+
+    function check() {
+        debugger;
+        var weight = +do_weight.value;
+        var height = do_height.value / 100;
+        var ketqua = weight/(height * height);
+        var ketqua2;
+        ketqua = ketqua.toFixed(2);
+        if (height <= 0 || weight <= 0) {
+            alert("Nhập sai vui lòng nhập lại")
+        } else {
+            if(ketqua < 18.5) ketqua2 = 1;
+            if(ketqua < 25.0 && ketqua >= 18.5) ketqua2 = 2;
+            if(ketqua < 30.0 && ketqua >= 25.0) ketqua2 = 3;
+            if(ketqua >= 30.0) ketqua2= 4;
+        }
+        var chuandoan;
+        switch (ketqua2) {
+            case 1:
+                chuandoan = "Underweight";
+                break;
+            case 2:
+                chuandoan ="Normal";
+                break;
+            case 3:
+                chuandoan= "Overweight";
+                break;
+            case 4:
+                chuandoan="Obese";
+                break;
+        }
+        if(height>0 && weight>0){
+            alert("Chỉ số BMI: " + ketqua + '\n' + "Tình trạng cơ thể: " + chuandoan )
+        }
+    }
+</script>
+</body>
+</html>

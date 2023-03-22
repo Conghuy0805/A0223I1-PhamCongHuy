@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  button{
+    font-size: large;
+  }
+  label{
+    font-size: large;
+  }
+</style>
+<body>
+<div>
+  <label for="num">Nhập a</label><br>
+  <input type="number" id="num">
+</div>
+<div>
+  <label for="num1">Nhập b</label><br>
+  <input type="number" id="num1">
+</div>
+<div>
+  <label for="num2">Nhập c</label><br>
+  <input type="number" id="num2">
+</div>
+<button type="submit" onclick="click2()">Send</button>
+</body>
+<script>
+  function click2() {
+    var x = document.getElementById("num").value;
+    var y = document.getElementById("num1").value;
+    var z = document.getElementById("num2").value;
+    if (x > y && x > z) {
+      alert(x + " là số lớn nhất ");
+    } else if (y > z) {
+      alert(y + "  là số lớn nhất ");
+    } else {
+      alert(z + " là số lớn nhất" );
+    }
+  }
+
+</script>
+</html>
