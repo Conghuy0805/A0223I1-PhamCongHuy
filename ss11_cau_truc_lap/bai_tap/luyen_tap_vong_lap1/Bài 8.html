@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 8</title>
+</head>
+<body>
+<button type="button" onclick="click1()">CHƠI</button>
+</body>
+<script>
+    function click1(){
+        let a = prompt('Nhập số dự đoán trong khoảng: ');
+        let x = parseInt(Math.random()*a);
+        let y = +prompt('Nhập giá trị mà người dùng muốn đoán: ')
+        while (y > x || y < x){
+            if(y > x){
+                alert('Lớn hơn');
+            }else if(y < x){
+                alert('Bé hơn');
+            }
+            y = prompt('Nhập lại');
+        }
+        alert('Chúc mừng và kết thúc lượt chơi');
+
+    }
+</script>
+</html>

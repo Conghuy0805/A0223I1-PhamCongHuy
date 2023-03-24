@@ -10,15 +10,13 @@
 <button type="button" onclick="tinh()">TÍNH TIỀN LÃI !</button>
 </body>
 <script>
-    function tinh() {
-        let tien = parseInt(prompt("Nhập số tiền ban đầu",));
-        let thang = parseInt(prompt("Nhập số tháng"));
-        let laiSuat = parseInt(prompt("Nhập số lãi suất",));
+    let tien = prompt("Nhập số tiền ban đầu");
+    let thang = prompt("Nhập số tháng cho vay");
+    let laiSuat = prompt("Nhập lãi suất hàng tháng");
 
-        for (let i = 0; i <= thang; i++) {
-            tien = tien + tien * laiSuat;
-        }
-        alert("Số tiền lãi là: " + tien);
+    for (let i = 0; i <= thang; i++) {
+        tien = (tien * thang * laiSuat) / 100;
     }
+    alert("Số tiền lãi là: " + tien);
 </script>
 </html>
