@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THỰC HÀNH MẢNG </title>
+</head>
+<body>
+<script>
+    let array = ['Huy', 'Phúc', 'Nguyên'];
+    for (let i = 0; i < array.length; i++) {
+        console.log("Index = " + i + "__Value " + array[i])
+    }
+    array.push("Kiên")
+    console.log(array[array.length-1]);
+
+    array.unshift("Thắng")
+    console.log(array[0]);
+
+
+    let x = [1,3,5,7];
+    let y = [2,4,6];
+    x[2] = y[x.length-3] + x [ x[0] + y[0] ];
+    console.log(x);
+    // Truy xuất mảng
+    // let firstValue = array[0];
+    // console.log(firstValue);
+</script>
+</body>
+</html>
