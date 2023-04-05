@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TỪ ĐIỂN</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập từ cần tìm: ')
+    let eNg = ['school', 'student', 'teacher', 'computer', 'book', 'bag'];
+    let vN = ['truong', 'hocsinh', 'giaovien', 'maytinh', 'sach', 'cap'];
+    let result = -1;
+    for (let i = 0; i < eNg.length; i++) {
+        if (a == eNg[i]) {
+            result = i;
+        }
+    }
+    if (result != -1) {
+        alert('Từ bạn nhập là ' + a + " được dịch ra là: " + vN[result])
+    } else {
+        alert('Không tìm thấy')
+    }
+</script>
+</body>
+</html>
