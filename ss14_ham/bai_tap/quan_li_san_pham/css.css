@@ -1,0 +1,39 @@
+input {
+    height: 30px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.table1 {
+    background-color: #EEEEEE;
+    height: 110px;
+    width: 100px;
+}
+
+.but1 {
+    margin-left: 5px;
+    margin-right: 30px;
+    background-color: #009900;
+    border: none;
+    width: 60px;
+    height: 35px;
+    color: white;
+}
+
+.tr1 {
+    width: 300px;
+    height: 50px;
+}
+
+.tr2 {
+    width: 100px;
+}
+
+.color {
+    background-color: #EEEEEE;
+}
+
+#sumProduct {
+    color: #BB0000;
+    font-weight: bold;
+}
