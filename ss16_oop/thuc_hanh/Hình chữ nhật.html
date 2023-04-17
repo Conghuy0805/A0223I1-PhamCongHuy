@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td><label>Nhập chiều dài:</label></td>
+    <td><input type="number" id="length" oninput="math()" onchange="math()"></td>
+  </tr>
+  <tr>
+    <td><label>Nhập chiều rộng:</label></td>
+    <td><input type="number" id="width" oninput="math()" onchange="math()"></td>
+  </tr>
+</table>
+<p id="result"></p>
+<canvas id="myCanvas" width="1000px" height="1000px"></canvas>
+</body>
+<script>
+  class Rectangle {
+    constructor(length, width) {
+      this.length = length;
+      this.width = width;
+    }
+
+    getPerimeter() {
+      return (2 * this.length + 2 * this.width);
+    }
+
+    getArea() {
+      return this.length * this.width;
+    }
+  }
+
+  let cd = document.getElementById('length');
+  let cr = document.getElementById('width');
+  let rectangle;
+
+  function math() {
+    let a = "";
+    rectangle = new Rectangle(cd.value, cr.value);
+    a += 'Chu vi hình chữ nhật: ' + rectangle.getPerimeter() + '<br>';
+    a += 'Diện tích hình chữ nhật: ' + rectangle.getArea();
+    document.getElementById('result').innerHTML = a;
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    context.clearRect(0, 0, 1000, 1000);
+    context.strokeRect(0, 0, cd.value, cr.value);
+  }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XÂY DỰNG LỚP MÔ TẢ HÌNH CHỮ NHẬT</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><label>Nhập chiều dài:</label></td>
+        <td><input type="number" id="length" oninput="calculate()" onchange="calculate()"></td>
+    </tr>
+    <tr>
+        <td><label>Nhập chiều rộng:</label></td>
+        <td><input type="number" id="width" oninput="calculate()" onchange="calculate()"></td>
+    </tr>
+</table>
+<p id="result"></p>
+<canvas id="myCanvas" width="500px" height="600px"></canvas>
+<script>
+    class Rectangle {
+      constructor(width,length){
+          this.width = width;
+          this.length = length;
+      }
+      getPerimeter(){
+          return (this.length + this.width) *2
+      }
+      getArea(){
+          return this.length * this.width
+      }
+    }
+    let chieudai = document.getElementById('length');
+    let chieurong = document.getElementById('width');
+
+    function calculate() {
+        let a = "";
+        let recTangle = new Rectangle(chieudai.value,chieurong.value);
+        a += "Chu vi hình chữ nhật: " + recTangle.getPerimeter() + '<br>';
+        a += "Diện tích hình chữ nhật: " + recTangle.getArea();
+        document.getElementById("result").innerHTML = a;
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext('2d')
+        ctx.clearRect(0,0,1000,1000);
+        ctx.strokeRect(0,0,chieudai.value,chieurong.value);
+    }
+
+</script>
+</body>
+</html>
