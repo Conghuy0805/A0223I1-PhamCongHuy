@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>PHÁT TRIỂN ỨNG DỤNG NHỎ MÔ PHỎNG CÂU CHUYỆN ADAM VÀ EVA</title>
 </head>
 <body>
-$END$
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10;
+        }
+
+        decrease() {
+            return this.weight--;
+        }
+
+        getWeight() {
+            return this.weight
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        say(language) {
+            return language;
+        }
+
+        eat(apple) {
+            if (apple.weight > 0)
+                this.weight++;
+            apple.weight--;
+        }
+
+        checkApple(apple) {
+            if (apple.weight > 0) {
+                alert("Ăn thôi!")
+            } else {
+                alert("Hết táo ăn rồi")
+            }
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(fullname) {
+            this.name = fullname;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(kg) {
+            this.weight = kg;
+        }
+    }
+
+    let fruits = new Apple();
+    fruits.getWeight();
+    console.log("Táo có khối lượng: " + fruits.getWeight() + " dv")
+    let human = new Human("Adam", "human", 48);
+    human.checkApple(fruits);
+    human.setWeight(50)
+    console.log(human.eat(fruits))
+</script>
 </body>
 </html>

@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>SỰ TƯƠNG TÁC GIỮA HAI ĐỐI TƯỢNG: CÔNG TẮC VÀ BÓNG ĐÈN</title>
 </head>
 <body>
-$END$
+<script>
+    class SwitchButton {
+        constructor(lamp) {
+            this.status = false;
+            this.lamp = lamp;
+        }
+        connectToLamp(lamp) {
+            console.log("Ket noi thanh cong");
+        }
+        switchOff() {
+            this.status = false;
+            console.log("Tat cong tat");
+        }
+        switchOn() {
+            this.status = true;
+            console.log("Bat cong tat");
+        }
+    }
+    class ElectricLamp {
+        constructor() {
+            this.status = false;
+        }
+        turnOff() {
+            ElectricLamp.status = false;
+            console.log("Den bat");
+        }
+        turnOn() {
+            ElectricLamp.status = true;
+            console.log("Den tat");
+        }
+    }
+    let lamp = new ElectricLamp();
+    let switchButton = new SwitchButton(lamp);
+    switchButton.connectToLamp(lamp);
+    for (let i = 1; i <= 10; i++) {
+        switchButton.switchOn();
+        switchButton.switchOff();
+    }
+</script>
 </body>
 </html>

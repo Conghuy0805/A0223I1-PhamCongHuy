@@ -6,20 +6,23 @@
 </head>
 <body>
 <script>
-    class Temperature{
-        constructor(doC){
+    class Temperature {
+        constructor(doC) {
             this.doC = doC;
         }
-        changeF(){
+
+        changeF() {
             return (this.doC * 1.8 + 32)
         }
-        changeK(){
+
+        changeK() {
             return (this.doC + 273.15)
         }
     }
+
     let tem = new Temperature(25);
-    alert(tem.changeF() +" °F");
-    alert(tem.changeK() +" °K")
+    alert(tem.changeF() + " °F");
+    alert(tem.changeK() + " °K")
 </script>
 </body>
 </html>

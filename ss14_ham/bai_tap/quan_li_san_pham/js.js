@@ -31,6 +31,7 @@ function creatProduct() {
     }else {
         alert("Bạn cần nhập thông tin ")
     }
+
     showProduct()
     document.getElementById("products").value = "";
 }
