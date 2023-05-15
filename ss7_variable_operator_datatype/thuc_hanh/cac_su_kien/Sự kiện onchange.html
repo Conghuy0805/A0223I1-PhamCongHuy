@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SỰ KIỆN ONCHANGE</title>
+</head>
+<body>
+<p>Chọn game bạn muốn chơi</p>
+<select id="mySelect" onchange="do_something()">
+    <option value="Liên Minh">Liên Minh</option>
+    <option value="FO4">FO4</option>
+    <option value="Valorant">Valorant</option>
+    <option value="Tft">Tft</option>
+</select>
+<script>
+    function do_something() {
+        let selectValue = document.getElementById("mySelect").value;
+        alert(selectValue);
+    }
+</script>
+</body>
+</html>

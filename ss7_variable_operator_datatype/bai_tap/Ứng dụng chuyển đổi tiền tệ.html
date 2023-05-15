@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</title>
+</head>
+<style>
+    button {
+        color: white;
+        background-color: mediumpurple;
+        border-color: lightblue;
+        height: 25px;
+        width: 100px;
+    }
+
+    #country {
+        width: 120px;
+    }
+
+    #country1 {
+        width: 120px;
+    }
+
+    tr, td {
+        padding: 5px 20px;
+    }
+
+    p {
+        color: blue;
+    }
+
+</style>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="num">
+        </td>
+        <td>
+            <select name="" id="country">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select name="" id="country1">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" value="Convert" onclick="count()">Convert</button>
+        </td>
+    <tr>
+        <td>
+            <p id="resutl"></p>
+        </td>
+    </tr>
+    </tr>
+</table>
+</body>
+<script>
+    function count() {
+        let a = document.getElementById("num").value;
+        let b = document.getElementById("country").value;
+        let c = document.getElementById("country1").value;
+
+        if (b == "VND" && c == "VND") {
+            document.getElementById("resutl").innerHTML = "Result: " + a + " VND"
+        }
+        if (b == "USD" && c == "USD") {
+            document.getElementById("resutl").innerHTML = "Result: " + a + " USD"
+        }
+        if (b == "VND" && c == "USD") {
+            document.getElementById("resutl").innerHTML = "Result: " + a / 23000 + " USD"
+        }
+        if (b == "USD" && c == "VND") {
+            document.getElementById("resutl").innerHTML = "Result: " + a * 23000 + " VND"
+        }
+    }
+</script>
+</html>

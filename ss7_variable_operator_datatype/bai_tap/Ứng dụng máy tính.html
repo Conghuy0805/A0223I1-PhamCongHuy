@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ỨNG DỤNG MÁY TÍNH</title>
+</head>
+<style>
+    button {
+        width: 110px;
+        border-color: darkgray;
+    }
+    input{
+        width: 200px;
+    }
+</style>
+<body>
+<h2>Caculator</h2>
+<div>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+</div>
+<br>
+<button type="submit" value="Addition(+)" onclick="check1()">Addition(+)</button>
+<button type="submit" value="Subtraction(-)" onclick="check2()">Subtraction(-)</button>
+<button type="submit" value="Multiplication(X)" onclick="check3()">Multiplication(X)</button>
+<button type="submit" value="Division(/)" onclick="check4()">Division(/)</button>
+<p id="ketqua"></p>
+</body>
+<script>
+    function check1() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let total = parseFloat(a) + parseFloat(b);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+
+    function check2() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let total = (a - b);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+
+    function check3() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let total = (a * b);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+
+    function check4() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let total = (a / b);
+        document.getElementById("ketqua").innerHTML = "Result Division: " + total;
+    }
+</script>
+</html>
