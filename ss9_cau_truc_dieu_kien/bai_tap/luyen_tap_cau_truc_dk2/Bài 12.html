@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 12</title>
+</head>
+<body>
+<script>
+    let soTienVay = parseFloat(prompt("Nhập vào số tiền vay: "));
+    let lai;
+    if (soTienVay > 0 && soTienVay <= 1000) {
+        lai = (soTienVay * 2) / 100;
+    } else if (soTienVay > 1000 && soTienVay < 2000) {
+        lai = (soTienVay * 8) / 100;
+    } else
+        lai = (soTienVay * 10) / 100;
+    alert("Lãi suất là: " + lai);
+</script>
+</body>
+</html>

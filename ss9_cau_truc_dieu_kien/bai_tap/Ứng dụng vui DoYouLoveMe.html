@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ỨNG DỤNG VUI DOYOULOVEME</title>
+</head>
+<style>
+    h1{
+        position: absolute;
+        left:220px;
+        top:175px;
+    }
+</style>
+<body>
+<h1>Do you love me?</h1>
+<input type="button" id="btYes" value=" YES " onclick="yes()" style="position:absolute; left:285px; top:235px;"/>
+<input type="button" id="btNo" value="  NO  " onmouseover="no()" style="position:absolute; left:360px; top:235px;"/>
+</body>
+<script>
+    function yes() {
+        alert("Làm người yêu anh nhé !");
+    }
+
+    function no() {
+        let a = Math.round(Math.random() * window.innerWidth);
+        let b = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("btNo").style.left = a + "px";
+        document.getElementById("btNo").style.top = b + "px"
+    }
+</script>
+</html>

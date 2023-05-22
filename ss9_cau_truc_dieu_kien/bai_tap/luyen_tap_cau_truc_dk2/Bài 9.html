@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 9</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập vào giá trị a: "));
+    let b = parseFloat(prompt("Nhập vào giá trị b: "));
+    let c = parseFloat(prompt("Nhập vào giá trị c: "));
+    if (a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b) {
+        alert(a + " " + b + " " + c + " Là cạnh của một tam giác");
+    } else {
+        alert(a + " " + b + " " + c + " Không phải là cạnh của tam giác");
+    }
+</script>
+</body>
+</html>
