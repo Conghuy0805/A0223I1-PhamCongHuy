@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 8</title>
+</head>
+<body>
+<button type="submit" onclick="playgame()">CHƠI</button>
+<script>
+    function playgame() {
+        let display = +prompt("Nhập vào khoảng để đoán: ");
+        let num = parseInt(Math.random() * display);
+        let value = +prompt("Nhập vào giá trị người dùng đoán ");
+        while (value > num || value < num) {
+            if (value > num) {
+                alert("Lớn hơn");
+            } else if (value < num) {
+                alert("Bé hơn")
+            }
+            value = +prompt("Nhập lại: ");
+        }
+        alert("Chúc mừng và kết thúc lượt chơi");
+    }
+</script>
+</body>
+</html>

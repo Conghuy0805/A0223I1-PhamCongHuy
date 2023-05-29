@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>SINH BẢNG CỬU CHƯƠNG</title>
 </head>
 <body>
-$END$
+<h2>BẢNG CỬU CHƯƠNG</h2>
+<script>
+    let a = "<table border='1' width='1000px'>"
+    for (let i = 1; i <= 9; i++) {
+        a = a + "<tr>";
+        for (let j = 2; j <= 9; j++) {
+            a += "<td>" + j + " x " + i + " = " + (j * i) + "</td>";
+        }
+        a = a + "</tr>";
+    }
+    a += "</table>";
+    document.writeln(a);
+
+</script>
 </body>
 </html>
