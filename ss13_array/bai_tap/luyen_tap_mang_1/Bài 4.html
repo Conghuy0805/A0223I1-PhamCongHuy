@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 4</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let first = 0;
+    let last = arr.length - 1;
+    while (first < last) {
+        let value = arr[first];
+        arr[first] = arr[last];
+        arr[last] = value;
+        first++;
+        last--;
+    }
+    document.write("Mảng đảo ngược: " + arr);
+</script>
+</body>
+</html>

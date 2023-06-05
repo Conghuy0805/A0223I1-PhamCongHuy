@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 3</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let max = arr[0];
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        total = total + arr[i];
+    }
+    document.write("Giá trị lớn nhất trong mảng là:" + max + "<br>" + "Giá trị trung bình của các phần từ trong mảng là: " + parseInt(total / arr.length)
+    )
+</script>
+</body>
+</html>

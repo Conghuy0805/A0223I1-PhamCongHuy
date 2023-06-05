@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 5</title>
+</head>
+<body>
+<script>
+    // Hàm split : Tách chuỗi
+
+    let a = "a b c d e f -1 -2 -3";
+    let str = a.split(" ");
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] < 0) {
+            count++;
+        }
+    }
+    if (count !== 0) {
+        alert("Có " + count + " nguyên âm trong chuỗi")
+    } else {
+        alert("Không có số nào")
+    }
+</script>
+</body>
+</html>

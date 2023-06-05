@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TỪ ĐIỂN</title>
+</head>
+<body>
+<script>
+    let dis = prompt("Nhập vào từ mà bạn muốn dịch: ")
+    let english = ["one", "two", "three"];
+    let vietnam = ["một", "hai", "ba"];
+    let result = -1;
+    for (let i = 0; i < english.length; i++) {
+        if (dis === english[i]) {
+            result = i;
+        }
+
+    }
+    if (result !== -1) {
+        alert("Từ bạn nhập vào là : " + dis + "\n" + "Được dịch là:  " + vietnam[result])
+    } else {
+        alert("Không tìm thấy")
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HÀM SPLICE</title>
+</head>
+<body>
+<script>
+    // Hàm splice: Xóa 1 hoặc nhiều phần tử.
+
+    let arr = ["Code", "gym", "vn"];
+    console.log(arr);
+    arr.splice(1, 1);
+    console.log(arr)
+    let student = [
+        {
+            id: 1,
+            age: 20,
+        },
+        {
+            id: 2,
+            age: 21,
+        }
+    ]
+    console.log(student)
+    for (let i = 0; i < student.length; i++) {
+        if (student[i].id === 2) {
+            student.splice(1, 1);
+        }
+    }
+    console.log(student)
+</script>
+</body>
+</html>

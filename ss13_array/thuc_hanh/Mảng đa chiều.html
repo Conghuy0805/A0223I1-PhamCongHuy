@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MẢNG ĐA CHIỀU</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1, 2, 3, 4],
+        [1, 2, 3, 4],
+        [1, 2, 3, 4],
+    ];
+    let sout = "<table border=2>";
+    for (let i = 0; i < arr.length; i++) {
+        sout += "<tr>"
+        for (let j = 0; j < arr[i].length; j++) {
+            sout += "<td>" + arr[i][j] + "</td>"
+        }
+        sout += "</tr>"
+    }
+    sout += "</table>";
+    document.write(sout);
+</script>
+</body>
+</html>
