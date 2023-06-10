@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>KIỂM TRA SỐ NGUYÊN TỐ</title>
 </head>
 <body>
-$END$
+<script>
+    let num = +prompt("Nhập vào số bât kì: ");
+    let count = 0;
+    if (num < 2) {
+        alert("Không phải số nguyên tố: ");
+    } else {
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                count++;
+                alert("Không phải số nguyên tố ");
+            }
+        }
+        if (count === 0) {
+            alert("Là số nguyên tố");
+        }
+    }
+</script>
 </body>
 </html>

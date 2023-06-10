@@ -13,11 +13,12 @@
     for (let i = 0; i < 20; i++) {
         if (i === 0 || i === 1) {
             f = 1;
-        } else if (i >= 2)
+        } else if (i >= 2) {
             f0 = f1;
             f1 = f;
             f = f1 + f0;
             total = total + f;
+        }
     }
     document.write(total)
 </script>

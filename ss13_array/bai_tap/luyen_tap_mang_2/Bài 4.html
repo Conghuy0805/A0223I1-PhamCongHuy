@@ -16,15 +16,19 @@
     // alert("Có " + count );
 
 
-    let str = "Code gym Đà Nẵng";
+    let str = "Code    gym     Đà Nẵng";
+    // let str = prompt("Mời bạn nhập vào chuỗi bất kỳ: ");
+    let  new_str = str.trim();
     let count = 1;
-    for (let i = 0; i <str.length ; i++) {
-        if (str[i]===" "){
-            count++;
+    for (let i = 0; i < new_str.length; i++) {
+        if ((new_str[i]) === " ") {
+            if (new_str[i] === " " && new_str[i + 1] === " ") {
+                continue;
+            }
+            count++
         }
     }
-    alert("Có " +count + " từ trong chuỗi")
-
+    alert(("Có " + count + " từ trong chuỗi"));
 </script>
 </body>
 </html>
