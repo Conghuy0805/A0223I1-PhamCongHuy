@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 7</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số thứ nhất: ");
+    let b = +prompt("Nhập vào số thứ hai: ");
+
+    function changeNumber(num1, num2) {
+        let num3 = num1;
+        num1 = num2;
+        num2 = num3;
+        alert("Hai số sau khi đổi chỗ là: " + num1 + " và " + num2);
+    }
+
+   changeNumber(a, b);
+</script>
+</body>
+</html>

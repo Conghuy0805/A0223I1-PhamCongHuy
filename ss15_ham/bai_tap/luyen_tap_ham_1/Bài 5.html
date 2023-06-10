@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 5</title>
+</head>
+<body>
+<script>
+    let starName = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function checkZodiac() {
+        let dis = prompt("Nhập tên ngôi sao: ");
+        let index = -1;
+        for (let i = 0; i < starName.length; i++) {
+            if (dis === starName[i]) {
+                index = i;
+            }
+        }
+        if (index !== -1) {
+            alert(constellation[index])
+        } else {
+            alert("Không tìm thấy")
+        }
+    }
+
+    checkZodiac();
+
+</script>
+</body>
+</html>

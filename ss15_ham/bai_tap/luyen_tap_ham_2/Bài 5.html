@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 5</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số thứ nhất: ");
+    let b = +prompt("Nhập vào số thứ hai: ");
+    let c = +prompt("Nhập vào số thứ ba:");
+
+    function minNumber(num1, num2, num3) {
+        let min;
+        if (num1 < num2 && num1 < num3) {
+            min = num1;
+        } else if (num2 < num3) {
+            min = num2;
+        } else {
+            min = num3;
+        }
+        return min;
+    }
+
+    alert(minNumber(a, b, c));
+</script>
+</body>
+</html>

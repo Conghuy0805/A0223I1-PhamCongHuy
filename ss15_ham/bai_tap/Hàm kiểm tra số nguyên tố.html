@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HÀM KIỂM TRA SỐ NGUYÊN TỐ</title>
+</head>
+<body>
+<script>
+    let dis = +prompt("Nhập vào số bất kỳ: ");
+
+    function isPrime(number) {
+        let count = 0;
+        if (number < 2) {
+            count++;
+        } else {
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    count++;
+                }
+            }
+        }
+        if (count === 0) {
+            alert(number + " là số nguyên tố");
+        } else {
+            alert(number + " không phải số nguyên tố");
+        }
+        return number;
+
+    }
+
+    isPrime(dis);
+</script>
+</body>
+</html>

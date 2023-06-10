@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 9</title>
+</head>
+<body>
+<script>
+    // let str = "Code Gym Đà Nẵng";
+    // let sub = "o";
+    // function count(){
+    //     alert(str.split(sub).length-1);
+    // }
+    // count();
+
+    let str = ["a", "b", "c", "d", "e", "f", "f", "h"];
+    let dis = prompt("Nhập vào kí tự bất kì: ");
+    let count = 0;
+
+    function characterCount() {
+        for (let i = 0; i < str.length; i++) {
+            if (dis === str[i]) {
+                count++;
+            }
+        }
+        if (count !== 0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+
+    alert(characterCount(dis));
+</script>
+</body>
+</html>

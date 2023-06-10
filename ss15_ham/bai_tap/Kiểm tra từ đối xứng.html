@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIỂM TRA TỪ ĐỐI XỨNG</title>
+</head>
+<body>
+<script>
+    let dis = prompt("Nhập vào chuỗi từ bất kì: ");
+
+    function isPalindrome(str) {
+        let n = str.length;
+        for (let i = 0; i < n / 2; i++) {
+            if (str[i] !== str[n - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    alert(isPalindrome(dis));
+</script>
+</body>
+</html>

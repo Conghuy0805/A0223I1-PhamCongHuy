@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 2</title>
+</head>
+<body>
+<script>
+    let dis = +prompt("Nhập bán kính: ");
+
+    function Area(r) {
+        const PI = 3.14;
+        let dien_tich;
+        dien_tich = (PI * (r * r))
+        return dien_tich;
+    }
+
+    function Perimeter(r) {
+        const PI = 3.14;
+        let chu_vi;
+        chu_vi = 2 * PI * r;
+        return chu_vi;
+    }
+
+    alert("Diện tích hình tròn là: " + Area(dis));
+    alert("Chu vi hình tròn là: " + Perimeter(dis));
+</script>
+</body>
+</html>
