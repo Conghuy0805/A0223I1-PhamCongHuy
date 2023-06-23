@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XÂY DỰNG LỚP DATE</title>
+</head>
+<body>
+<script>
+    class Date {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setDay(day) {
+            this.day = day;
+        }
+
+        setMonth(month) {
+            this.month = month;
+        }
+
+        setYear(year) {
+            this.year = year;
+        }
+
+        setDate(ngay, thang, nam) {
+            this.day = ngay;
+            this.month = thang;
+            this.year = nam;
+        }
+
+        toString() {
+            return this.day + "/" + this.month + "/" + this.year;
+        }
+    }
+
+    let date = new Date(8, 5, 2003);
+    console.log(date.getDay())
+    console.log(date.getMonth());
+    console.log(date.getYear());
+    date.setDay(14);
+    console.log(date.getDay())
+    date.setMonth(6);
+    console.log(date.getMonth());
+    date.setYear(2023);
+    console.log(date.getYear())
+    date.setDate(14, 6, 2023);
+    console.log(date.toString());
+</script>
+</body>
+</html>

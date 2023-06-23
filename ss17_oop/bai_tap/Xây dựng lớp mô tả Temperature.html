@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XÂY DỰNG LỚP MÔ TẢ TEMPERATURE</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC
+        }
+
+        changeF() {
+            return (this.doC * 1.8 + 32);
+        }
+
+        changeK() {
+            return (this.doC + 273.15);
+        }
+    }
+
+    let temPerature = new Temperature(25);
+    document.write(temPerature.changeF() + " °F" + "<br>");
+    document.write(temPerature.changeK() + " °K");
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XÂY DỰNG LỚP HÌNH TRÒN</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Bán kính: <input type="text" id="bankinh" placeholder="Nhập bán kính">
+        </td>
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <td>
+            <button type="submit" onclick="do_circle1()">Tính diện tích</button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    class Circle {
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = color;
+        }
+
+        getRadius() {
+            return this.radius;
+        }
+
+        getArea() {
+            return (Math.PI * this.radius * this.radius);
+        }
+    }
+
+    let r = document.getElementById("bankinh");
+
+    function do_circle1() {
+        let circle = new Circle(r.value);
+        console.log(circle.radius);
+        circle.color = "Xanh";
+        console.log(circle.color);
+        console.log(circle.getRadius());
+        console.log("Bán kính là: " + circle.radius + "\n" + "Diện tích là: " + circle.getArea())
+    }
+
+</script>
+</body>
+</html>
