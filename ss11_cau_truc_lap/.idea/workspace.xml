@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="000e46b6-7d8b-45d1-b310-5e582ae12fed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ss15_ham/thuc_hanh/quan_li_san_pham/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss15_ham/thuc_hanh/quan_li_san_pham/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss15_ham/thuc_hanh/quan_li_san_pham/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss17_oop/thuc_hanh/Xây dựng lớp Date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss17_oop/thuc_hanh/Xây dựng lớp Hình Tròn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GitProject/GitProject" beforeDir="false" afterPath="$PROJECT_DIR$/../GitProject/GitProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss15_ham/bai_tap/luyen_tap_ham_2/Bài 7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss15_ham/bai_tap/luyen_tap_ham_2/Bài 7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss15_ham/bai_tap/ung_dung_quan_li_san_pham/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ss15_ham/bai_tap/ung_dung_quan_li_san_pham/js.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2RIMHVJcxnEjs8FEjehd2Q2TLGP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CaseStudy" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="000e46b6-7d8b-45d1-b310-5e582ae12fed" name="Changes" comment="" />
+      <created>1686933054891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686933054891</updated>
+      <workItem from="1686933056124" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

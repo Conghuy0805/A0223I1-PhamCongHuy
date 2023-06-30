@@ -8,7 +8,7 @@ function showAllProduct() {
     let content = "";
     for (let i = 0; i < productList.length; i++) {
         content += '<tr>\n' +
-            '            <td>' + productList[i] + '</td>\n' +
+            '            <td>' +productList[i] + '</td>\n' +
             '            <td>\n' +
             '                <button type="submit" onclick="editProduct(' + i + ')">Edit</button>\n' +
             '            </td>\n' +

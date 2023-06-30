@@ -1,0 +1,17 @@
+#tb1{
+    background: #EEEEEE;
+    height: 110px;
+    width: 100px;
+}
+input{
+    height: 30px;
+    width:300px;
+    margin-left: 20px;
+}
+.but1{
+    height: 35px;
+    width:50px;
+    background-color:#33CC66 ;
+    color: white;
+    border-radius: 6px ;
+}

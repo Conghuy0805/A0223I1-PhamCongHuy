@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SỰ TƯƠNG TÁC GIỮA CÔNG TẮC VÀ BÓNG ĐÈN</title>
+</head>
+<body>
+<script>
+    class SwitchButton {
+        constructor(status, lamp) {
+            this.status = status;
+            this.lamp = lamp;
+        }
+
+        connectToLamp(lamp) {
+            lamp.status = this.status;
+            console.log("Kết nối thành công")
+        }
+
+        switchOff() {
+            this.status = false;
+            console.log("Tắt công tắt");
+        }
+
+        switchOn() {
+            this.status = true;
+            console.log("Bật công tắc");
+        }
+    }
+
+    class ElectricLamp {
+        constructor(status) {
+            this.status = status;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+    }
+
+    let lamp = new ElectricLamp(true);
+    let button = new SwitchButton(true, lamp);
+    button.connectToLamp(lamp);
+    for (let i = 0; i < 5; i++) {
+        button.switchOn()
+        button.switchOff();
+    }
+
+</script>
+</body>
+</html>

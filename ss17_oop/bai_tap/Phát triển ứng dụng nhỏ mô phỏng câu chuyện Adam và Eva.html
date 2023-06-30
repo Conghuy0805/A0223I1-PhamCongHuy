@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHÁT TRIỂN ỨNG DỤNG NHỎ ADAM VÀ EVA</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        decrease() {
+            this.weight--;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        say(text) {
+            console.log(text);
+        }
+
+        eat(apple) {
+            if (apple.weight > 0) {
+                this.weight++;
+                apple.decrease();
+            }
+        }
+
+        checkApple(apple) {
+            if (apple.weight > 0) {
+                console.log("Ăn thôi");
+            } else {
+                console.log("Hết táo ăn rồi ");
+            }
+        }
+
+        setGender(gender) {
+            this.gender = gender
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+    }
+
+    let apple = new Apple();
+    apple.getWeight();
+    console.log("Táo có khối lượng: " + apple.getWeight() + " dv")
+    let human = new Human("Adam", "human", 48);
+    human.checkApple(apple);
+    human.setWeight(50)
+    human.eat(apple)
+    human.say("Ngon quá")
+
+
+</script>
+</body>
+</html>
